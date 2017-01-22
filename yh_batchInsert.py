@@ -23,6 +23,7 @@ for li in range(1, 50000):
     mobile = mobile_array[random.randint(0, len(mobile_array)) - 1] + str(random.randint(1, 99999999)).zfill(8);
     fi.write(sql_template % {"abnorId": abnorId, "sheetId": sheetId, "receiveTime": receiveTime, "ecName": ec_name,
                              "mobile": mobile} + '\n')
+
     current_time = current_time + datetime.timedelta(hours=1);
 
 fi.close()

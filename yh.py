@@ -9,6 +9,7 @@ def random_timestamp():
     hour=str(random.randint(0,24)).zfill(2)
     min=str(random.randint(0,60)).zfill(2)
     sec=str(random.randint(0,60)).zfill(2)
+
     return '%s %s:%s:%s'  % (YYYYMMDD,hour,min,sec)
 
 fi = open('yh.sql','w+')
